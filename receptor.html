@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Receptor</title>
-</head>
-<body>
+  </head>
+  <body>
     <p>Comando recibido:</p>
     <div id="txt_cm"></div>
-</body>
-<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-database-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore-compat.js"></script>
   <script src="firebase.js"></script>
-  <script src="script.js"></script>
+  <script>
+    let CambioDeVista = {
+      Categoria_1_Opcion_1: "composition/columns/1/connect",
+      Categoria_1_Opcion_2: "composition/columns/2/connect",
+      Categoria_1_Opcion_3: "composition/columns/3/connect",
+      Categoria_2_Opcion_1: "composition/columns/4/connect",
+      Categoria_2_Opcion_2: "composition/columns/5/connect",
+      Categoria_2_Opcion_3: "composition/columns/6/connect",
+      Categoria_3_Opcion_1: "composition/columns/7/connect",
+      Categoria_3_Opcion_2: "composition/columns/8/connect",
+      Categoria_3_Opcion_3: "composition/columns/9/connect",
+    };
+
+    const datos_display = document.querySelector("#txt_cm");
+
+    firestore
+      .collection("comandos_receptor")
+      .doc("comando_captado")
+      .onSnapshot((doc) => {
+        console.log(`Detalles: ${doc.data().espacio}`);
+        al_cambiar_el_comando(doc.data().espacio);
+      });
+
+    function al_cambiar_el_comando(el_comando_recibido) {
+      if (CambioDeVista[el_comando_recibido] != undefined) {
+        console.log("El comando es: " + CambioDeVista[el_comando_recibido]);
+      } else {
+        alert("Lo que se envio no es un comando reconocido");
+      }
+    }
+  </script>
 </html>

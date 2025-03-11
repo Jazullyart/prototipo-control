@@ -29,12 +29,12 @@ let CambioDeVista = {
   Categoria_3_Opcion_3: "composition/columns/9/connect"
 }
 
-const datos_display = document.querySelector("#txt_cm")
+const datos_display = document.getElementById("txt_cm")
 
 function enviar(comando) {
   if(comando == ""){
       referencia.update({
-          espacio: CambioDeVista[1]
+          espacio: datos_display.value
       })
   }
   else{
