@@ -11,6 +11,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const firestore = firebase.firestore();
+window.firestore = firestore;
 
 const referencia = firestore
   .collection("comandos_receptor")
