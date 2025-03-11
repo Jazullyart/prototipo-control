@@ -1,5 +1,3 @@
-
-
 const RESOLUME_API_URL = "http://localhost:8080/api/v1";
 
 async function sendCommand(endpoint) {
@@ -26,24 +24,23 @@ let CambioDeVista = {
   Categoria_2_Opcion_3: "composition/columns/6/connect",
   Categoria_3_Opcion_1: "composition/columns/7/connect",
   Categoria_3_Opcion_2: "composition/columns/8/connect",
-  Categoria_3_Opcion_3: "composition/columns/9/connect"
-}
+  Categoria_3_Opcion_3: "composition/columns/9/connect",
+};
 
-const datos_display = document.getElementById("txt_cm")
+const datos_display = document.getElementById("txt_cm");
 
 function enviar(comando) {
-  if(comando == ""){
-      referencia.update({
-          espacio: datos_display.value
-      })
-  }
-  else{
-      referencia.update({
-          espacio: comando
-      })
+  if (comando == "") {
+    referencia.update({
+      espacio: datos_display.value,
+    });
+  } else {
+    referencia.update({
+      espacio: comando,
+    });
   }
 
-  return comando
+  return comando;
 }
 
 var categoria = 0;
