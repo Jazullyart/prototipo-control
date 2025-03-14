@@ -1,3 +1,15 @@
+let CambioDeVista = {
+  "composition/columns/1/connect": "composition/columns/1/connect",
+  "composition/columns/2/connect": "composition/columns/2/connect",
+  "composition/columns/3/connect": "composition/columns/3/connect",
+  "composition/columns/4/connect": "composition/columns/4/connect",
+  "composition/columns/5/connect": "composition/columns/5/connect",
+  "composition/columns/6/connect": "composition/columns/6/connect",
+  "composition/columns/7/connect": "composition/columns/7/connect",
+  "composition/columns/8/connect": "composition/columns/8/connect",
+  "composition/columns/9/connect": "composition/columns/9/connect",
+};
+
 const datos_display = document.getElementById("txt_cm");
 
 function enviar(comando) {
