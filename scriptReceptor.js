@@ -25,9 +25,7 @@ function al_cambiar_el_comando(el_comando_recibido) {
 if (CambioDeVista[el_comando_recibido] != undefined) {
   console.log("El comando es: " + CambioDeVista[el_comando_recibido]);
   datos_display.innerHTML = el_comando_recibido
-  datos_display.addEventListener("load", () => {
-    sendCommand(el_comando_recibido);
-  });
+  sendCommand(el_comando_recibido);
 } else {
   alert("Lo que se envio no es un comando reconocido");
 }
