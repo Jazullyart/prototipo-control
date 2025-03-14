@@ -17,19 +17,19 @@ function enviar(comando) {
 var categoria = 0;
 
 document.getElementById("Categoria1").addEventListener("click", () => {
-  sendCommand(enviar(CambioDeVista.Categoria_1_Opcion_1));
+  enviar(CambioDeVista.Categoria_1_Opcion_1);
   categoria = 1;
   console.log(categoria);
 });
 
 document.getElementById("Categoria2").addEventListener("click", () => {
-  sendCommand(enviar(CambioDeVista.Categoria_2_Opcion_1));
+  enviar(CambioDeVista.Categoria_2_Opcion_1);
   categoria = 2;
   console.log(categoria);
 });
 
 document.getElementById("Categoria3").addEventListener("click", () => {
-  sendCommand(enviar(CambioDeVista.Categoria_3_Opcion_1));
+  enviar(CambioDeVista.Categoria_3_Opcion_1);
   categoria = 3;
   console.log(categoria);
 });
@@ -41,17 +41,17 @@ document.getElementById("Adelante").addEventListener("click", () => {
     case 1:
       switch (opcion) {
         case 1:
-          sendCommand(enviar(CambioDeVista.Categoria_1_Opcion_1));
+          CambioDeVista.Categoria_1_Opcion_1;
           opcion = 2;
           break;
 
         case 2:
-          sendCommand(enviar(CambioDeVista.Categoria_1_Opcion_2));
+          enviar(CambioDeVista.Categoria_1_Opcion_2);
           opcion = 3;
           break;
 
         case 3:
-          sendCommand(enviar(CambioDeVista.Categoria_1_Opcion_3));
+          enviar(CambioDeVista.Categoria_1_Opcion_3);
           opcion = 1;
           break;
 
@@ -63,17 +63,17 @@ document.getElementById("Adelante").addEventListener("click", () => {
     case 2:
       switch (opcion) {
         case 1:
-          sendCommand(enviar(CambioDeVista.Categoria_2_Opcion_1));
+          enviar(CambioDeVista.Categoria_2_Opcion_1);
           opcion = 2;
           break;
 
         case 2:
-          sendCommand(enviar(CambioDeVista.Categoria_2_Opcion_2));
+          enviar(CambioDeVista.Categoria_2_Opcion_2);
           opcion = 3;
           break;
 
         case 3:
-          sendCommand(enviar(CambioDeVista.Categoria_2_Opcion_3));
+          enviar(CambioDeVista.Categoria_2_Opcion_3);
           opcion = 1;
           break;
 
@@ -85,17 +85,17 @@ document.getElementById("Adelante").addEventListener("click", () => {
     case 3:
       switch (opcion) {
         case 1:
-          sendCommand(enviar(CambioDeVista.Categoria_3_Opcion_1));
+          enviar(CambioDeVista.Categoria_3_Opcion_1);
           opcion = 2;
           break;
 
         case 2:
-          sendCommand(enviar(CambioDeVista.Categoria_3_Opcion_2));
+          enviar(CambioDeVista.Categoria_3_Opcion_2);
           opcion = 3;
           break;
 
         case 3:
-          sendCommand(enviar(CambioDeVista.Categoria_3_Opcion_3));
+          enviar(CambioDeVista.Categoria_3_Opcion_3);
           opcion = 1;
           break;
 
