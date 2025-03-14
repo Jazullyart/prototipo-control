@@ -29,19 +29,19 @@ function enviar(comando) {
 var categoria = 0;
 
 document.getElementById("Categoria1").addEventListener("click", () => {
-  enviar(CambioDeVista.Categoria_1_Opcion_1);
+  enviar("composition/columns/1/connect");
   categoria = 1;
   console.log(categoria);
 });
 
 document.getElementById("Categoria2").addEventListener("click", () => {
-  enviar(CambioDeVista.Categoria_2_Opcion_1);
+  enviar("composition/columns/4/connect");
   categoria = 2;
   console.log(categoria);
 });
 
 document.getElementById("Categoria3").addEventListener("click", () => {
-  enviar(CambioDeVista.Categoria_3_Opcion_1);
+  enviar("composition/columns/7/connect");
   categoria = 3;
   console.log(categoria);
 });
@@ -53,17 +53,17 @@ document.getElementById("Adelante").addEventListener("click", () => {
     case 1:
       switch (opcion) {
         case 1:
-          CambioDeVista.Categoria_1_Opcion_1;
+          enviar("composition/columns/1/connect")
           opcion = 2;
           break;
 
         case 2:
-          enviar(CambioDeVista.Categoria_1_Opcion_2);
+          enviar("composition/columns/2/connect");
           opcion = 3;
           break;
 
         case 3:
-          enviar(CambioDeVista.Categoria_1_Opcion_3);
+          enviar("composition/columns/3/connect");
           opcion = 1;
           break;
 
@@ -75,17 +75,17 @@ document.getElementById("Adelante").addEventListener("click", () => {
     case 2:
       switch (opcion) {
         case 1:
-          enviar(CambioDeVista.Categoria_2_Opcion_1);
+          enviar("composition/columns/4/connect");
           opcion = 2;
           break;
 
         case 2:
-          enviar(CambioDeVista.Categoria_2_Opcion_2);
+          enviar("composition/columns/5/connect");
           opcion = 3;
           break;
 
         case 3:
-          enviar(CambioDeVista.Categoria_2_Opcion_3);
+          enviar("composition/columns/6/connect");
           opcion = 1;
           break;
 
@@ -97,17 +97,17 @@ document.getElementById("Adelante").addEventListener("click", () => {
     case 3:
       switch (opcion) {
         case 1:
-          enviar(CambioDeVista.Categoria_3_Opcion_1);
+          enviar("composition/columns/7/connect");
           opcion = 2;
           break;
 
         case 2:
-          enviar(CambioDeVista.Categoria_3_Opcion_2);
+          enviar("composition/columns/8/connect");
           opcion = 3;
           break;
 
         case 3:
-          enviar(CambioDeVista.Categoria_3_Opcion_3);
+          enviar("composition/columns/9/connect");
           opcion = 1;
           break;
 
