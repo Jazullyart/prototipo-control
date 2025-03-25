@@ -1,447 +1,74 @@
-@media only screen and (max-width: 600px) {
-  .iphone {
-    background-color: #464741;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .iphone .div {
-    background-color: #464741;
-    width: 393px;
-    height: 852px;
-    position: relative;
-  }
-
-  .iphone .overlap {
-    position: absolute;
-    width: 94px;
-    height: 70px;
-    top: 515px;
-    left: 218px;
-  }
-
-  .iphone .rectangle {
-    width: 70px;
-    height: 94px;
-    top: -12px;
-    left: 12px;
-    background-color: #D5BDCB;
-    border-radius: 12px 12px 0px 0px;
-    transform: rotate(90deg);
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .line {
-    left: 41px;
-    position: absolute;
-    width: 22px;
-    height: 39px;
-    top: 16px;
-  }
-
-  .iphone .overlap-group {
-    position: absolute;
-    width: 94px;
-    height: 70px;
-    top: 515px;
-    left: 82px;
-  }
-
-  .iphone .rectangle-2 {
-    width: 70px;
-    height: 94px;
-    top: -12px;
-    left: 12px;
-    background-color: #D5BDCB;
-    border-radius: 12px 12px 0px 0px;
-    transform: rotate(-90deg);
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .img {
-    left: 30px;
-    position: absolute;
-    width: 22px;
-    height: 39px;
-    top: 16px;
-  }
-
-  .iphone .rectangle-3 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 81px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-4 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 143px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-5 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 205px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-6 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 267px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .text-wrapper {
-    position: absolute;
-    top: 707px;
-    left: 173px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #D5BDCB;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-
-  .iphone .overlap-group-2 {
-    position: absolute;
-    width: 338px;
-    height: 342px;
-    top: 103px;
-    left: 27px;
-  }
-
-  .iphone .ellipse {
-    position: absolute;
-    width: 97px;
-    height: 98px;
-    top: 119px;
-    left: 121px;
-    background-color: #464741;
-    border-radius: 48.5px / 49px;
-  }
-
-  .iphone .vector {
-    position: absolute;
-    width: 163px;
-    height: 245px;
-    top: 0;
-    left: 175px;
-    background-color: #13ACB4;
-    border-radius: 50px;
-    padding: 20px;
-  }
-
-  .iphone .vector-2 {
-    position: absolute;
-    width: 274px;
-    height: 165px;
-    top: 177px;
-    left: 32px;
-    background-color: #F3D448;
-    border-radius: 50px;
-    padding: 20px;
-  }
-
-  .iphone .vector-3 {
-    position: absolute;
-    width: 166px;
-    height: 244px;
-    top: 2px;
-    left: 0;
-    background-color: #DE5791;
-    border-radius: 50px;
-    padding: 20px;
-  }
-
-  .iphone .ellipse-2 {
-    position: absolute;
-    width: 75px;
-    height: 76px;
-    top: 128px;
-    left: 132px;
-    background-color: #D5BDCB;
-    border-radius: 37.5px / 38px;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-7 {
-    width: 42px;
-    height: 70px;
-    top: 515px;
-    left: 176px;
-    background-color: #AF8BB9;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .circle {
-    position: relative;
-    width: 200px; /* Tamaño del círculo */
-    height: 200px;
-    border-radius: 50%; /* Hace que sea un círculo */
-  }
-}
-
 @media only screen and (min-width: 600px) {
-  .iphone {
+  .telefono {
     background-color: #464741;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
   }
 
-  .iphone .div {
-    background-color: #464741;
-    width: 393px;
-    height: 852px;
+  .btn-apagar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .botones-categorias {
     position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
-  .iphone .overlap {
+  .btn-cat {
     position: absolute;
-    width: 94px;
-    height: 70px;
-    top: 515px;
-    left: 218px;
-  }
-
-  .iphone .rectangle {
-    width: 70px;
-    height: 94px;
-    top: -12px;
-    left: 12px;
-    background-color: #D5BDCB;
-    border-radius: 12px 12px 0px 0px;
-    transform: rotate(90deg);
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .line {
-    left: 41px;
-    position: absolute;
-    width: 22px;
-    height: 39px;
-    top: 16px;
-  }
-
-  .iphone .overlap-group {
-    position: absolute;
-    width: 94px;
-    height: 70px;
-    top: 515px;
-    left: 82px;
-  }
-
-  .iphone .rectangle-2 {
-    width: 70px;
-    height: 94px;
-    top: -12px;
-    left: 12px;
-    background-color: #D5BDCB;
-    border-radius: 12px 12px 0px 0px;
-    transform: rotate(-90deg);
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .img {
-    left: 30px;
-    position: absolute;
-    width: 22px;
-    height: 39px;
-    top: 16px;
-  }
-
-  .iphone .rectangle-3 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 81px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-4 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 143px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-5 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 205px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-6 {
-    width: 45px;
-    height: 35px;
-    top: 736px;
-    left: 267px;
-    background-color: #D5BDCB;
-    border-radius: 4px;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .text-wrapper {
-    position: absolute;
-    top: 707px;
-    left: 173px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-
-  .iphone .overlap-group-2 {
-    position: absolute;
-    width: 338px;
-    height: 342px;
-    top: 103px;
-    left: 27px;
-  }
-
-  .iphone .ellipse {
-    position: absolute;
-    width: 97px;
-    height: 98px;
-    top: 119px;
-    left: 121px;
-    background-color: #464741;
-    border-radius: 48.5px / 49px;
-  }
-
-  .iphone .vector {
-    position: absolute;
-    width: 163px;
-    height: 245px;
-    top: 0;
-    left: 175px;
-    background-color: #13ACB4;
-    border-radius: 50px;
-    padding: 20px;
-  }
-
-  .iphone .vector-2 {
-    position: absolute;
-    width: 274px;
-    height: 165px;
-    top: 177px;
-    left: 32px;
-    background-color: #F3D448;
-    border-radius: 50px;
-    padding: 20px;
-  }
-
-  .iphone .vector-3 {
-    position: absolute;
-    width: 166px;
-    height: 244px;
-    top: 2px;
-    left: 0;
-    background-color: #DE5791;
-    border-radius: 50px;
-    padding: 20px;
-  }
-
-  .iphone .ellipse-2 {
-    position: absolute;
-    width: 75px;
-    height: 76px;
-    top: 128px;
-    left: 132px;
-    background-color: #D5BDCB;
-    border-radius: 37.5px / 38px;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .iphone .rectangle-7 {
-    width: 42px;
-    height: 70px;
-    top: 515px;
-    left: 176px;
-    background-color: #AF8BB9;
-    position: absolute;
-    box-shadow: 0px 4px 0px #AF8BB9;
-  }
-
-  .circle {
-    position: relative;
-    width: 200px; /* Tamaño del círculo */
-    height: 200px;
-    border-radius: 50%; /* Hace que sea un círculo */
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: #AF8BB9;
-  }
-
-  .iphone {
-    background-color: #464741;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 30%;
+    width: 100%;
     height: 100%;
-    padding: 20px;
-    margin: 40px auto 40px auto;
-    border-radius: 50px;
-    box-shadow: 0px 4px 0px #AF8BB9;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%, 50% 100%);
+
   }
 
-  .iphone .div {
+  .btn-cat:nth-child(1) {
+    transform: rotate(120deg);
+    background-color: tomato;
+  }
+  .btn-cat:nth-child(1):hover {
+    background-color: rgb(149, 62, 47);
+  }
+  .btn-cat:nth-child(2) {
+    transform: rotate(-120deg);
+    background-color: gold;
+  }
+
+  .btn-cat:nth-child(3) {
+    transform: rotate(0deg);
+    background-color: limegreen;
+  }
+
+  .circulo-1 {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    top: 100px;
+    left: 100px;
     background-color: #464741;
-    width: 100%;
-    height: auto;
-    position: relative;
+    border-radius: 50%;
+  }
+
+  .boton-enmedio {
+    position: absolute;
+    width: 22%;
+    height: 22%;
+    top: 114px;
+    left: 115px;
+    background-color: #d5bdcb;
+    border-radius: 50%;
+    box-shadow: 0px 4px 0px #af8bb9;
   }
 }
 
-.iphone .vector:hover, .iphone .vector-2:hover, .iphone .vector-3:hover{
-  box-shadow: 15px 15px 10px#85d96d;
+@media only screen and (min-width: 992px) {
+  .telefono {
+  }
 }

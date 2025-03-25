@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleold.css" />
     <script
       src="https://kit.fontawesome.com/54fb1ed1c3.js"
       crossorigin="anonymous"
@@ -12,36 +12,34 @@
   </head>
   <body>
     <div class="iphone">
-      <div class="boton-apagar">
-        <button id="OnOff" class="btn-off"><i class="fa-solid fa-power-off"></i></button>
+      <div class="boton-off">
+        <button class="btn-apagar"></button>
       </div>
 
-      <div class="div">
+      <div class="botones-categorias">
+        <div id="Categoria3" class="btn-cat"></div>
+        <div id="Categoria2" class="btn-cat"></div>
+        <div id="Categoria1" class="btn-cat"></div>
+        <div class="circulo-1"></div>
+        <div class="boton-enmedio"></div>
+      </div>
+
+      <div class="botones-flechas">
         <div class="overlap">
-          <div id="Adelante" class="rectangle"></div>
-          <i class="fa-solid fa-angle-left">a</i>
+          <div id="Adelante" class="btn-adelante">
+            <i class="fas fa-angle-right"></i>
+          </div>
         </div>
         <div class="overlap-group">
-          <div id="Atras" class="rectangle-2"></div>
-          <i class="fa-solid fa-angle-right">a</i>
+          <div id="Atras" class="btn-atras"></div>
+          <i class="fas fa-angle-left"></i>
         </div>
+
         <div class="rectangle-3"></div>
         <div class="rectangle-4"></div>
         <div class="rectangle-5"></div>
         <div class="rectangle-6"></div>
         <div class="text-wrapper">Créditos</div>
-        <div class="overlap-group-2">
-          <div class="ellipse"></div>
-          <!-- <img class="vector" src="img/vector-1.svg" />
-          <img class="vector-2" src="img/vector-2.svg" />
-          <img class="vector-3" src="img/vector-3.svg" /> -->
-          <div id="Categoria3" class="vector"></div>
-          <div id="Categoria2" class="vector-2"></div>
-          <div id="Categoria1" class="vector-3"></div>
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-        </div>
-        <div class="rectangle-7"></div>
       </div>
     </div>
   </body>
@@ -50,5 +48,5 @@
   <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-database-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore-compat.js"></script>
   <script src="firebase.js"></script>
-  <script src="scriptControl2.js"></script>
+  <script src="scriptControl.js"></script>
 </html>

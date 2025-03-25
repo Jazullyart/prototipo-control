@@ -1,3 +1,15 @@
+let CambioDeVista = {
+  "composition/columns/1/connect": "composition/columns/1/connect",
+  "composition/columns/2/connect": "composition/columns/2/connect",
+  "composition/columns/3/connect": "composition/columns/3/connect",
+  "composition/columns/4/connect": "composition/columns/4/connect",
+  "composition/columns/5/connect": "composition/columns/5/connect",
+  "composition/columns/6/connect": "composition/columns/6/connect",
+  "composition/columns/7/connect": "composition/columns/7/connect",
+  "composition/columns/8/connect": "composition/columns/8/connect",
+  "composition/columns/9/connect": "composition/columns/9/connect",
+};
+
 const datos_display = document.getElementById("txt_cm");
 
 function enviar(comando) {
@@ -23,8 +35,6 @@ var columnas_categoria_2 = [4,5,6];
 var columnas_categoria_3 = [7,8,9];
 
 var indices = { 1: 0, 2: 0, 3: 0 };
-
-var bandera = false
 
 document.getElementById("Categoria1").addEventListener("click", () => {
   categoria_actual = 1;
@@ -86,15 +96,4 @@ document.getElementById("Atras").addEventListener("click", () => {
   indices[categoria_actual] = (indices[categoria_actual] - 1 + columnas.length) % columnas.length;
 
   console.log("Elemento actual:", columnas[indices[categoria_actual]]);
-})
-
-document.getElementById("OnOff").addEventListener("click", () => {
-  if(bandera == false){
-    enviar("composition/columns/1/connect")
-    bandera = true
-  }
-  else{
-    enviar("composition/columns/10/connect")
-    bandera = false
-  }
 })
