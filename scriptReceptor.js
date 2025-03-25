@@ -8,6 +8,7 @@ let CambioDeVista = {
     "composition/columns/7/connect": "composition/columns/7/connect",
     "composition/columns/8/connect": "composition/columns/8/connect",
     "composition/columns/9/connect": "composition/columns/9/connect",
+    "composition/columns/10/connect": "composition/columns/10/connect"
   };
 
   
