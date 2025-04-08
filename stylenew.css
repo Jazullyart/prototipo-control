@@ -35,8 +35,8 @@
   }
 
   .btn-ad {
-    width: 7vw;
-    height: 6vh;
+    width: 12vh;
+    height: 8vh;
     background-color: #d5bdcb;
     border: none;
     border-radius: 10px 0px 0px 10px;
@@ -49,8 +49,8 @@
     font-size: 2em;
   }
   .btn-at {
-    width: 7vw;
-    height: 6vh;
+    width: 12vh;
+    height: 8vh;
     background-color: #d5bdcb;
     border: none;
     border-radius: 0px 10px 10px 0px;
@@ -65,7 +65,7 @@
 
   .rec-deco {
     width: 5%;
-    height: 6vh;
+    height: 8vh;
     background-color: #b88dae;
     box-shadow: 3px 3px 0px #b88dae;
   }
@@ -218,7 +218,7 @@
   }
 
   .btn-ad {
-    width: 7vw;
+    width: 6vh;
     height: 6vh;
     background-color: #d5bdcb;
     border: none;
