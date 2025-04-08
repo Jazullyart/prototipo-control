@@ -121,6 +121,12 @@
     clip-path: polygon(50% 50%, 100% 0, 100% 100%, 50% 100%);
   }
 
+  .btn-cat i{
+    position: absolute;
+    color: white;
+    z-index: 6;
+  }
+
   .btn-cat:nth-child(1) {
     transform: rotate(120deg);
     background-color: #13acb4;
