@@ -6,11 +6,11 @@
   }
 
   .btn-off {
-    width: 3.6vw;
+    width: 8vh;
     height: 8vh;
     border-radius: 50%;
     border: 0px;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     background-color: #da4a49;
   }
 
@@ -111,6 +111,7 @@
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
+    margin: 10%;
   }
 
   .btn-cat {
@@ -179,15 +180,16 @@
   }
 
   .telefono {
-    width: 25%;
+    width: auto;
     height: 90vh;
+    padding: 2%;
     margin: auto;
     border-radius: 7%;
     background-color: #464741;
   }
 
   .btn-off {
-    width: 3.6vw;
+    width: 8vh;
     height: 8vh;
     border-radius: 50%;
     border: 0px;
