@@ -111,7 +111,7 @@
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 10%;
+    margin: auto auto 10% auto;
   }
 
   .btn-cat {
